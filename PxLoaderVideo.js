@@ -123,4 +123,7 @@ if (typeof define === 'function' && define.amd) {
     define('PxLoaderVideo', [], function() {
         return PxLoaderVideo;
     });
-}
+} else if (typeof module === 'object' && module.exports) {
+    module.exports = PxLoaderVideo;
+} 
+

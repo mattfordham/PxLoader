@@ -97,4 +97,6 @@ if (typeof define === 'function' && define.amd) {
     define('PxLoaderSound', [], function() {
         return PxLoaderSound;
     });
-}
+} else if (typeof module === 'object' && module.exports) {
+    module.exports = PxLoaderSound;
+} 

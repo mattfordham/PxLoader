@@ -78,4 +78,7 @@ if (typeof define === 'function' && define.amd) {
   define('PxLoaderData', [], function() {
     return PxLoaderData;
   });
-}
+} else if (typeof module === 'object' && module.exports) {
+    module.exports = PxLoaderData;
+} 
+

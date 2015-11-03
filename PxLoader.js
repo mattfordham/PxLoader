@@ -406,7 +406,9 @@
         define('PxLoader', [], function() {
             return PxLoader;
         });
-    }
+    } else if (typeof module === 'object' && module.exports) {
+        module.exports = PxLoader;
+    } 
 
     // exports
     global.PxLoader = PxLoader;

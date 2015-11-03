@@ -107,4 +107,6 @@ if (typeof define === 'function' && define.amd) {
     define('PxLoaderImage', [], function() {
         return PxLoaderImage;
     });
-}
+} else if (typeof module === 'object' && module.exports) {
+    module.exports = PxLoaderImage;
+} 
